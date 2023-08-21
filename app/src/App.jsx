@@ -1,7 +1,10 @@
+import TitleScreen from "./TitleScreen";
+import "./main.css";
+
 export default function App() {
   return (
     <>
-      <h1>Hello!</h1>
+      <TitleScreen title="Pokémon" />
     </>
   );
 }
