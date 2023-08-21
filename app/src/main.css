@@ -47,6 +47,7 @@ body {
 }
 
 .pokemon-list-frame {
+    position: relative;
     padding: 10vh
 }
 
@@ -55,12 +56,13 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 100vh;
     text-align: center;
-    gap: 5vh;
+    gap: 4vh;
 }
 
 .pokemon-card {
     padding: 8vh 2vh;
     font: bold 3em sans-serif;
+    border-radius: .5vh;
 }
 
 .pokemon-card #pokemon-icon img {
@@ -81,3 +83,23 @@ body {
     align-items: space-between;
 }
 
+.change-pokemon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.change-pokemon button {
+    width: 20vh;
+    height: 8vh;
+    margin: -5vh 12vh 5vh;
+    font: bold small-caps 2em 'Arial', 'Helvetica', sans-serif;
+    background-color: #FFE255;
+    border: none;
+    border-radius: .5vh;
+    cursor: pointer;
+}
+
+.change-pokemon button:hover {
+    background-color: #FFD255;
+}
