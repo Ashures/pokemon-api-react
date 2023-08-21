@@ -1,12 +1,10 @@
+import ChangePokemonButtons from "./ChangePokemonButtons.jsx";
 import PokemonCard from "./PokemonCard.jsx";
 
-export default function PokemonList({pokemon}) {
+export default function PokemonList({pokemon, prevPokemon, nextPokemon}) {
     return (
         <div className="pokemon-list-frame">
-            <div className="change-pokemon">
-                <button id="prev-pokemon">Prev</button>
-                <button id="next-pokemon">Next</button>
-            </div>
+            <ChangePokemonButtons prevPokemon={prevPokemon} nextPokemon={nextPokemon} />
             <div className="pokemon-list">
                 {pokemon.map(p => (
                     <PokemonCard name={p} />

@@ -22,10 +22,18 @@ export default function App() {
     });
   }, [currentPage]);
 
+  function clickPrevPokemon() {
+    setCurrentPage(prevPage);
+  }
+  
+  function clickNextPokemon() {
+    setCurrentPage(nextPage);
+  }
+
   return (
     <div className="main">
       <TitleScreen title="Pokémon" />
-      <PokemonList pokemon={pokemon} />
+      <PokemonList pokemon={pokemon} prevPokemon={clickPrevPokemon} nextPokemon={clickNextPokemon} />
     </div>
   );
 }
