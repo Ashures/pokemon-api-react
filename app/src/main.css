@@ -6,9 +6,13 @@ body {
     margin: 0;
 }
 
+.main {
+    width: 100vw;
+}
+
 .main-title-screen {
     background-color: #FFE255;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
 }
@@ -41,3 +45,39 @@ body {
     font: bold small-caps 8em sans-serif;
     color: white;
 }
+
+.pokemon-list-frame {
+    padding: 10vh
+}
+
+.pokemon-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    text-align: center;
+    gap: 5vh;
+}
+
+.pokemon-card {
+    padding: 8vh 2vh;
+    font: bold 3em sans-serif;
+}
+
+.pokemon-card #pokemon-icon img {
+    width: 80%;
+}
+
+.pokemon-list > .pokemon-card:nth-of-type(odd) {
+    background-color: #FF9F55;
+}
+
+.pokemon-list > .pokemon-card:nth-of-type(even) {
+    background-color: #FF7155;
+}
+
+.pokemon-card > * {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+
