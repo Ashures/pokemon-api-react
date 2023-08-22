@@ -46,27 +46,102 @@ body {
     color: white;
 }
 
+#focus-pokemon-popup {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    place-content: center;
+}
+
+#focus-pokemon-card {
+    background-color: #FF7155;
+    padding: 1.5vw 0.75vw;
+    border-radius: 1%;
+    height: max(500px, 600px);
+    width: max(300px, 420px);
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+#focus-pokemon-card img {
+    width: auto;
+    height: 20vw;
+    aspect-ratio: 1 / 1;
+}
+
+#focus-pokemon-card h2 {
+    color: black;
+    text-align: center;
+    font: bold 3vw sans-serif;
+    margin: 0;
+}
+
+#focus-pokemon-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2vh 2vw 0 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: red;
+    font: bold 4vh sans-serif;
+    text-transform: capitalize;
+}
+
+#focus-pokemon-close-btn:hover,
+#focus-pokemon-close-btn:focus {
+    color: #C03;
+}
+
 .pokemon-list-frame {
-    position: relative;
-    padding: 10vh
+    margin-bottom: 5vw;
 }
 
 .pokemon-list {
+    padding: 0 8.5vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
     height: 100vh;
     text-align: center;
-    gap: 4vh;
+    gap: 1vw;
 }
 
 .pokemon-card {
-    padding: 8vh 2vh;
-    font: bold 3em sans-serif;
+    padding: 4vh 2vh;
+    font: bold 2vw sans-serif;
+    letter-spacing: .2rem;
     border-radius: .5vh;
+    width: 20vw;
+    height: 24vw;
+    transition: 50ms;
+}
+
+.pokemon-card > * > * {
+    transition: 50ms;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.pokemon-card #pokemon-icon {
+    background-color: #FFF;
+    padding: 1vh;
+    display: grid;
 }
 
 .pokemon-card #pokemon-icon img {
-    width: 80%;
+    width: auto;
+    height: 16vw;
+    aspect-ratio: 1 / 1;
+    place-items: center;
 }
 
 .pokemon-list > .pokemon-card:nth-of-type(odd) {
@@ -77,23 +152,18 @@ body {
     background-color: #FF7155;
 }
 
-.pokemon-card > * {
-    display: flex;
-    justify-content: center;
-    align-items: space-between;
-}
-
 .change-pokemon {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 34.5vw;
 }
 
 .change-pokemon button {
     width: 20vh;
     height: 8vh;
-    margin: -5vh 12vh 5vh;
-    font: bold small-caps 2em 'Arial', 'Helvetica', sans-serif;
+    font: bold small-caps 5vh 'Arial', 'Helvetica', sans-serif;
     background-color: #FFE255;
     border: none;
     border-radius: .5vh;
@@ -102,4 +172,10 @@ body {
 
 .change-pokemon button:hover {
     background-color: #FFD255;
+}
+
+.change-pokemon p {
+    font: 4vh sans-serif;
+    margin: 0;
+    text-align: center;
 }

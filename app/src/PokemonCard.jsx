@@ -1,10 +1,10 @@
-export default function PokemonCard({name}) {
-    const image = `images/${name}.jpg`;
+export default function PokemonCard({name, clickPokemon}) {
+    const image = `https://img.pokemondb.net/artwork/avif/${name}.avif`;
 
     return (
         <div className="pokemon-card">
-            <div id="pokemon-icon">
-                <img src={image} alt={name} />
+            <div id="pokemon-icon" onClick={event => clickPokemon(event)}>
+                <img src={image} alt={name} id={name} />
             </div>
             <div id="pokemon-title">
                 {name}
