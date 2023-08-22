@@ -5,10 +5,10 @@ export default function PokemonList({pokemon, prevPokemon, nextPokemon, pageNo, 
     return (
         <>
             <div id="focus-pokemon-popup">
-                <button onClick={closeFocusPokemon} id="focus-pokemon-close-btn">X</button>
+                <div onClick={closeFocusPokemon} id="focus-pokemon-bg"></div>
                 <div id="focus-pokemon-card">
-                    <img src="https://img.pokemondb.net/artwork/avif/charmander.avif" alt="charmander" id="focus-pokemon-card-img"/>
-                    <h2 id="focus-pokemon-card-title">charmander</h2>
+                    <img src="" alt="" id="focus-pokemon-card-img"/>
+                    <h2 id="focus-pokemon-card-title">Whoops! Something went wrong!</h2>
                 </div>
             </div>
             <div className="pokemon-list-frame">
