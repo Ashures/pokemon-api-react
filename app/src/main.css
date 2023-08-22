@@ -157,19 +157,27 @@ body {
 .change-pokemon button {
     width: 20vh;
     height: 8vh;
-    font: bold small-caps 5vh 'Arial', 'Helvetica', sans-serif;
-    background-color: #FFE255;
+    font: bold small-caps 4.5vh 'Arial', 'Helvetica', sans-serif;
+    background-color: #4d4803;
     border: none;
     border-radius: .5vh;
     cursor: pointer;
+    transition: 50ms;
 }
 
 .change-pokemon button:hover {
-    background-color: #FFD255;
+    background-color: #FFE255;
+    border-radius: 1.5vh;
+    font-size: 4.7vh;
 }
 
 .change-pokemon p {
-    font: 4vh sans-serif;
+    font-size: 4vh;
+    font-family: sans-serif;
     margin: 0;
     text-align: center;
+}
+
+.bold {
+    font-weight: bold;
 }
