@@ -3,8 +3,8 @@ export default function PokemonCard({name, clickPokemon}) {
 
     return (
         <div className="pokemon-card">
-            <div id="pokemon-icon" onClick={event => clickPokemon(event)}>
-                <img src={image} alt={name} id={name} />
+            <div id="pokemon-icon">
+                <img onClick={event => clickPokemon(event)} src={image} alt={name} id={name} />
             </div>
             <div id="pokemon-title">
                 {name}
