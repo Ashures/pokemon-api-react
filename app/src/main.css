@@ -89,14 +89,14 @@ body {
     padding: 2vh 2vw 0 0;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    color: red;
+    color: rgb(245, 52, 52);
     font: bold 4vh sans-serif;
     text-transform: capitalize;
 }
 
 #focus-pokemon-close-btn:hover,
 #focus-pokemon-close-btn:focus {
-    color: #C03;
+    color: #c90b2a;
 }
 
 .pokemon-list-frame {
