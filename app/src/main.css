@@ -151,24 +151,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 34.5vw;
+    padding: 1vw 37.5vw;
 }
 
 .change-pokemon button {
-    width: 20vh;
+    width: 8vh;
     height: 8vh;
     font: bold small-caps 4.5vh 'Arial', 'Helvetica', sans-serif;
-    background-color: #4d4803;
+    background-color: #807012;
     border: none;
-    border-radius: .5vh;
+    border-radius: 1vh;
     cursor: pointer;
     transition: 50ms;
 }
 
 .change-pokemon button:hover {
     background-color: #FFE255;
-    border-radius: 1.5vh;
-    font-size: 4.7vh;
+    border-radius: 4vh;
+    font-size: 5.3vh;
 }
 
 .change-pokemon p {
